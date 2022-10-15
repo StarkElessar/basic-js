@@ -19,8 +19,6 @@ function renameFiles(names) {
   const filesObject = {}
 
   for (let i = 0; i < names.length; i++) {
-    console.log(names[i])
-
     if (filesObject.hasOwnProperty(names[i])) {
       filesObject[names[i]] += 1
       names[i] = `${names[i]}(${filesObject[names[i]]})`
